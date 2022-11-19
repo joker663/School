@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">校园生活</string>
+
+    <string-array name="day">
+        <item>
+            --请选择--
+        </item>
+        <item>
+            星期一
+        </item>
+        <item>
+            星期二
+        </item>
+        <item>
+            星期三
+        </item>
+        <item>
+            星期四
+        </item>
+        <item>
+            星期五
+        </item>
+        <item>
+            星期六
+        </item>
+        <item>
+            星期日
+        </item>
+    </string-array>
+
+    <string-array name="time">
+        <item>
+            --请选择--
+        </item>
+        <item>
+            1-2节课
+        </item>
+        <item>
+            3-4节课
+        </item>
+        <item>
+            5-6节课
+        </item>
+        <item>
+            7-8节课
+        </item>
+        <item>
+            9-10节课
+        </item>
+    </string-array>
+</resources>

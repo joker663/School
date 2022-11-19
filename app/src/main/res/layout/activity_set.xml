@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".manage.AddClassActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加课程"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间:"
+            android:textSize="30dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_margin="10dp"/>
+
+        <Spinner
+            android:id="@+id/selected_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/day">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="课时:"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/selected_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/time">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="科目:"
+            android:textSize="30dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请输入科目"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/cardview_light_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任课教师:"
+            android:textSize="30dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/teacher"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请输入教师"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/cardview_light_background"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+    <Button
+        android:id="@+id/close_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消" />
+
+<!--    这个TextView是为了填背景的空白的，没有其他意义-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"/>
+
+</LinearLayout>

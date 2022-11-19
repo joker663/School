@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lzh.school"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="校园生活"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.School"
+        android:icon="@drawable/ic_launcher"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="首页"/>
+        <activity
+            android:name=".card.CardManageActivity"
+            android:exported="false"
+            android:label="校园卡管理"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="注册"/>
+        <activity
+            android:name=".card.ListCardActivity"
+            android:exported="false"
+            android:label="挂失信息"/>
+        <activity
+            android:name=".card.DeleteCardActivity"
+            android:exported="false"
+            android:label="删除挂失"/>
+        <activity
+            android:name=".card.AddCardActivity"
+            android:exported="false"
+            android:label="发布挂失"/>
+        <activity
+            android:name=".manage.ScheduleActivity"
+            android:exported="false"
+            android:label="课程表"/>
+        <activity
+            android:name=".manage.EduSystemActivity"
+            android:exported="false"
+            android:label="教务管理"/>
+        <activity
+            android:name=".manage.AddClassActivity"
+            android:exported="false"
+            android:label="添加课程"/>
+
+        <activity
+            android:name=".WeatherActivity"
+            android:exported="false"
+            android:label="天气预报"/>
+        <activity
+            android:name=".manage.AlarmActivity"
+            android:exported="false"
+            android:label="闹钟"/>
+        <activity
+            android:name=".manage.SetAlarmActivity"
+            android:exported="false"
+            android:label="添加闹钟"/>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="校园生活">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

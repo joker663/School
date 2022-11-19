@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/tubiao" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="6dp"
+                android:text="学号："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入学号"
+                android:background="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="20"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="6dp"
+                android:text="密码："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入密码"
+                android:background="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="textPassword"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="20"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="确认密码："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/pwd2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请确认密码"
+                android:background="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="textPassword"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="20"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="注册"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

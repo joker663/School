@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pb"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:text="发布信息"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="学 号："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/card_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入学号"
+                android:background="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="20"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="姓 名："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/card_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入姓名"
+                android:background="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="20"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="专 业："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/card_major"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入专业"
+                android:background="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="20"
+                android:paddingLeft="10dp"
+                android:completionThreshold="0"
+                android:completionHint="选择专业"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="描 述："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/card_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入备注"
+                android:background="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="6"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/card_publish"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="发 布"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@color/cardview_light_background"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
