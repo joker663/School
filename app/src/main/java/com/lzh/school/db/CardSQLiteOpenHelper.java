@@ -70,7 +70,7 @@ public class CardSQLiteOpenHelper {
         return db.update("tb_Card", value, "cnumber=?", new String[]{String.valueOf(card.cnumber)});
     }
 
-    //根据游戏id查找以发布内容
+    //根据学号查找已发布内容
     @SuppressLint("Range")
     public Card getCardInfo(String cnumber) {
         Cursor cursor = db.query("tb_Card", null, "cnumber=?", new String[]{cnumber}, null, null, null);
